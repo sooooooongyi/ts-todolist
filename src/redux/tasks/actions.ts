@@ -25,4 +25,13 @@ export const updateTask = (
     },
   };
 };
-export const removeTask = (id: string) => {};
+export const removeTask = (id: string): Action => {
+  return {
+    type: "REMOVE_TASK",
+    payload: {
+      id,
+      content: "",
+      complete: false,
+    },
+  };
+};

@@ -1,19 +1,16 @@
 import React from "react";
 import styled from "@emotion/styled";
-import TaskProvider from "./context/TaskProvider";
 import Header from "./components/Header";
 import NewTaskForm from "./components/NewTaskForm";
 import TaskList from "./components/TaskList";
 
 function App() {
   return (
-    <TaskProvider>
-      <Container>
-        <Header>ToDo</Header>
-        <NewTaskForm />
-        <TaskList css={{ marginTop: 16 }} />
-      </Container>
-    </TaskProvider>
+    <Container>
+      <Header>ToDo</Header>
+      <NewTaskForm />
+      <TaskList css={{ marginTop: 16 }} />
+    </Container>
   );
 }
 
